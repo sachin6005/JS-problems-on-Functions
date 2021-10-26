@@ -60,3 +60,29 @@ function sum() {
      console.log('Number of people with name sachin and age 22 are  ' +test)
   }
   checkName()
+
+  // Reverse a number
+
+function reverse_a_number(n)
+{
+	n = n + "";
+  reversedStr = n.split("").reverse().join("");
+ return reversedStr
+}
+reversedN =Number(reverse_a_number(32243));
+console.log(reversedN)
+
+
+// To convert the first letter of each word of the string in upper case.
+
+function uppercase(str)
+{
+  var array1 = str.split(' ');
+  var newarray1 = [];
+    
+  for(var i = 0; i < array1.length; i++){
+      newarray1.push(array1[i].charAt(0).toUpperCase()+array1[i].slice(1));
+  }
+  return newarray1.join(' ');
+}
+console.log(uppercase("the quick brown fox"));
